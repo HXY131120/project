@@ -197,10 +197,16 @@ body,html{
     overflow: visible;
 }
 .main_left{
-	margin-top: 40px;
+	float: left;
+	padding-top: 40px;
     padding-bottom: 30px;
     padding-left: 80px;
     width: 510px;
+}
+.main_left h2{
+	font-size: 16px;
+    font-weight: 700;
+    margin: 0 0 40px;
 }
 .main_left div{
 	min-height: 32px;
@@ -223,4 +229,74 @@ body,html{
 }
 .safe{
 	padding-left: 70px;
+}
+.main_left .safe input{
+	width: 20px;
+}
+.submit button{
+	border: medium none;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    height: 37px;
+    line-height: 36px;
+    padding-bottom: 2px;
+    margin-right: 20px;
+    text-align: center;
+    width: 103px;
+    background: url(http://s0.husor.cn/image/icons/orange_btns.png) no-repeat scroll 0 0 transparent;
+    display: inline-block;
+    color: #fff;
+    text-shadow: 1px 1px 1px #f30;
+}
+/*右边部分*/
+.main_Right{
+	float: left;
+	padding-top: 15px;
+    height: 335px;
+    background: url(http://s0.husor.cn/image/tj_split.png) no-repeat scroll 15px 35px #fff;
+	width: 230px;
+    padding-left: 70px;
+}
+.click{
+	width: 100px;
+	height: 30px;
+	border-radius: 10px;
+	background: -webkit-gradient(linear,left top,left bottom,from(#7DB72F),to(#4E7D0E));
+    background: -moz-linear-gradient(top,#7DB72F,#4E7D0E);
+    background: -o-linear-gradient(top,#7DB72F,#4E7D0E);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7DB72F',endColorstr='#4E7D0E');
+    border: 1px solid #538312;
+}
+.main_Right p{
+	margin-bottom: 6px;
+}
+.open_login{
+	margin-top: 50px;
+}
+.open_login p{
+	color: #666;
+}
+.open_login ul{
+	list-style:none;
+	margin: 15px 55px 0 55px;
+    text-align: left;
+}
+.open-login ul li {
+    margin: 5px 0;
+    height: 24px;
+    line-height: 24px;
+    border: 1px solid #ddd;
+    border-radius: 5px 5px 5px 5px;
+    background-color: white;
+    -moz-transition: border .2s linear 0,-moz-box-shadow .2s linear 0;
+    cursor: pointer;
+}
+.open-login ul li a {
+    color: #666;
+    text-decoration: none;
+    height: 24px;
+    display: inline-block;
+    padding: 0 8px;
+    background-image: url();
 }
