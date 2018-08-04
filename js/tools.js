@@ -1,0 +1,48 @@
+$("#submit").mouseenter(function(){
+	$(".header_hide").css("display","block");
+});
+$(".header_hide").mouseout(function(){
+	$(".header_hide").css("display","none");
+});
+$(".span").mouseenter(function(){
+	$(".show").css("display","block");
+});
+$(".show").mouseout(function(){
+	$(".show").css("display","none");
+});
+$(".nav_cen").children("a").each(function(){
+	$(this).mouseenter(function(){
+		$(this).children("img").animate({
+		width:"280px",
+		height:"170px",
+		left:"-10px",
+		top:"-5px"
+		},1000);
+	});
+});
+$(".nav_cen").children("a").each(function(){
+	$(this).mouseout(function(){
+		$(this).children("img").animate({
+		width:"260px",
+		height:"160px",
+		left:"0px",
+		top:"0px"
+		},1000);
+	});
+});
+$(".inner_item").each(function(){
+	$(this).mouseenter(function(){
+		$(this).find($(".mask_img")).css("display","block");
+		$(this).find($(".alt")).css("display","block");
+		$(this).find($(".go-buy")).css("display","block");
+		$(this).find($(".buy-info")).css("display","none");
+	});
+});
+$(".inner_item").each(function(){
+	$(this).mouseout(function(){
+		$(this).find($(".mask_img")).css("display","none");
+		$(this).find($(".alt")).css("display","none");
+		$(this).find($(".go-buy")).css("display","none");
+		$(this).find($(".buy-info")).css("display","block");
+	});
+});
